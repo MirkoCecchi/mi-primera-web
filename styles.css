@@ -22,10 +22,11 @@ a {
     display: inline-block;
     background-color: #000000;
     color: rgb(175, 155, 155);
-    padding: 12px 20px;
+    padding: 16px 28px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 12px;
     margin-top: 10px;
+    font-size: 20px;
 }
 
 img {
