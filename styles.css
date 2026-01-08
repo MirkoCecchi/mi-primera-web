@@ -57,6 +57,15 @@ li {
     text-decoration: none;
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.whatsapp-float:active {
+    transform: scale(0.92);
 }
 
 .whatsapp-float svg {
@@ -101,7 +110,19 @@ li {
     text-decoration: none;
     font-weight: bold;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
+.hero-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-btn:active {
+    transform: scale(0.97);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 .hero img {
     max-width: 600px;
@@ -243,6 +264,7 @@ body  {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     opacity: 0;
     transform: translateY(30px);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .card.show {
@@ -258,8 +280,8 @@ body  {
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 .card h3 {
@@ -420,4 +442,18 @@ body  {
     header {padding: 20px 10px;}
 
     section {padding: 15px;}
+}
+
+@media (hover: hover) {
+    .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15) ;
+    }
+}
+
+@media (hover: none) {
+    .hero-btn:hover {
+        transform: none;
+        box-shadow: none;
+    }
 }
